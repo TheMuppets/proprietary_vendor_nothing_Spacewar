@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "scenes_config": [
+        {
+            "scene": "default_scene",
+            "level_configs": [
+                {
+                    "level": 9,
+                    "unit_configs": {
+                        "brightness": 5
+                    }
+                },
+                {
+                    "level": 10,
+                    "unit_configs": {
+                        "brightness": 6,
+                        "nr_nsa_disable": 1
+                    }
+                },
+                {
+                    "level": 11,
+                    "unit_configs": {
+                        "brightness": 10
+                    }
+                },
+                {
+                    "level": 12,
+                    "unit_configs": {
+                        "fps": 60
+                    }
+                }
+           ]
+        }
+    ],
+    "apps_config": [
+        {
+            "app_list": "com.google.android.apps.restore",
+            "level_configs": [
+                {
+                    "level": 6,
+                    "unit_configs": {
+                        "brightness": 10
+                    }
+                }
+            ]
+        }
+    ]
+}

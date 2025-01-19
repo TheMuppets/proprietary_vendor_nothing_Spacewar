@@ -1,6 +1,6 @@
-# Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
-# All Rights Reserved.
-# Confidential and Proprietary - Qualcomm Technologies, Inc
+#  Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+#  All rights reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 # Not a contribution.
 #
@@ -66,3 +66,4 @@ setpriority: 1
 getdents64: 1
 dup: 1
 mremap:1
+gettid: 1

@@ -11,7 +11,7 @@
 export PATH=/vendor/bin
 
 soc_id=`getprop ro.vendor.qti.soc_id`
-if [ "$soc_id" -eq 415 ] || [ "$soc_id" -eq 439 ] || [ "$soc_id" -eq 450 ] || [ "$soc_id" -eq 475 ] || [ "$soc_id" -eq 497 ] || [ "$soc_id" -eq 498 ] || [ "$soc_id" -eq 499 ] || [ "$soc_id" -eq 515 ]; then
+if [ "$soc_id" -eq 415 ] || [ "$soc_id" -eq 439 ] || [ "$soc_id" -eq 450 ] || [ "$soc_id" -eq 475 ] || [ "$soc_id" -eq 497 ] || [ "$soc_id" -eq 498 ] || [ "$soc_id" -eq 499 ] || [ "$soc_id" -eq 515 ] || [ "$soc_id" -eq 576 ]; then
     setprop persist.vendor.hvdcp_opti.start 2
     exit 0
 fi
