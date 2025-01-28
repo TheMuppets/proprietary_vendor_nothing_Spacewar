@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nothing/Spacewar
 
 PRODUCT_COPY_FILES += \
+    vendor/nothing/Spacewar/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/nothing/Spacewar/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/nothing/Spacewar/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/nothing/Spacewar/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -936,6 +937,7 @@ PRODUCT_PACKAGES += \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libSonyIMX471RmscLibrary \
+    libaacvibrator \
     libaidenoiser \
     libaidenoiserv2 \
     libaoa \
