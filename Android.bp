@@ -6575,6 +6575,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdirac",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdirac.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liblvacfs_wrapper",
     owner: "nothing",
     strip: {
@@ -7237,6 +7260,37 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdiraceffect_NT",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libdiraceffect_NT.so",
+            ],
+            shared_libs: [
+                "libdirac",
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libaudioutils",
                 "liblog",
                 "libc++",
                 "libc",
