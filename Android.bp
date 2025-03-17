@@ -23987,15 +23987,6 @@ dex_import {
     system_ext_specific: true,
 }
 
-prebuilt_etc {
-    name: "init.qti.media.rc",
-    owner: "nothing",
-    src: "proprietary/vendor/etc/init/init.qti.media.rc",
-    filename_from_src: true,
-    sub_dir: "init",
-    soc_specific: true,
-}
-
 prebuilt_etc_xml {
     name: "android.hardware.gnss@2.1-service-qti.xml",
     owner: "nothing",
