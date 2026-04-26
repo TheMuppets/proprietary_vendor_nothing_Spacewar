@@ -16,6 +16,7 @@
             // this enables encoding rotate by C2D. it is used for some low tier end chipsets which
             // don't support rotate feature in video core. TODO - Rename as enc_vpss_rotation
             "enc_c2d_rotation": false,
+            "platform_disable_ubwc": false,
             // target supports cvp for all encode usecases.
             "enc_cvp_enable": false,
             // encoder csc enable
